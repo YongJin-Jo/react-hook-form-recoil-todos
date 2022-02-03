@@ -1,6 +1,10 @@
-interface IToDo {
-  text: string;
-  category: 'DOING' | 'TO_DO' | 'DONE';
-  id: number;
+export enum Categories {
+  'TO_DO' = 'TO_DO',
+  'DOING' = 'DOING',
+  'DONE' = 'DONE',
 }
-export type { IToDo };
+export interface IToDo {
+  text: string;
+  id: number;
+  category: Categories;
+}
