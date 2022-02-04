@@ -1,7 +1,7 @@
 import { DefaultValue } from 'recoil';
 
 export const localStorageEffect =
-  (key: any) =>
+  (key: string) =>
   ({ setSelf, onSet }: any) => {
     const savedValue = localStorage.getItem(key);
     if (savedValue != null) {
